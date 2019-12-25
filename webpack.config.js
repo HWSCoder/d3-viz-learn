@@ -13,6 +13,11 @@ module.exports = {
         progress: true,
         contentBase: './dist'
     },
+    module: {
+        rules: [
+            {test: /\.css$/, use: ['style-loader', 'css-loader']}
+        ]
+    },
     plugins: [ // all plugins here
         new HtmlWebpackPlugin({
             template: './src/index.html',

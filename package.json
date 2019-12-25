@@ -1,0 +1,26 @@
+{
+  "name": "d3-viz-learn",
+  "version": "1.0.0",
+  "description": "Learn d3",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HWSCoder/d3-viz-learn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HWSCoder/d3-viz-learn/issues"
+  },
+  "homepage": "https://github.com/HWSCoder/d3-viz-learn#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}

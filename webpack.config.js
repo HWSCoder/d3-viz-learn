@@ -10,11 +10,23 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
     },
     devServer: {
-        progress: true,
-        contentBase: './dist'
+        contentBase: './dist',
+        hot: true,
     },
     module: {
         rules: [
+            {
+                test: /.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets:[
+                            '@babel/preset-env'
+                        ]
+                    }
+                }
+            },
             {test: /\.css$/, use: ['style-loader', 'css-loader']}
         ]
     },

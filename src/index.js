@@ -1,3 +1,4 @@
-import drawFace from './drawFace/drawFace';
+import barChart from './barChart/barChart';
 
-drawFace();
+// drawFace();
+barChart();

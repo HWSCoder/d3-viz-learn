@@ -16,6 +16,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.csv$/,
+                use: 'file-loader',
+            },
+            {
                 test: /.js$/,
                 exclude: /node_modules/,
                 use: {
